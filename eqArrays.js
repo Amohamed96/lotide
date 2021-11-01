@@ -15,11 +15,12 @@ const eqArrays = function (array1, array2) {
     }
   }
   return result;
+
   // for (let i = 0; i < array2.length; i++) {
   //   return array2;
   // }
   
 }
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), true);
+assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), false);
 assertEqual(eqArrays([1, 2], [1, 2, 3]), true);
